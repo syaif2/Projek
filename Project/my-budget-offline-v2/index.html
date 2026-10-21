@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="Budget Saya - budgeting pribadi offline">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<title>Budget Saya</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" onclick="App.goHome()">Budget Saya</div>
+  <button class="icon-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" type="button">☰</button>
+</header>
+<div id="menuPanel" class="menu-panel hidden" aria-hidden="true">
+  <button class="menu-item" type="button" onclick="App.menuHome()">Beranda</button>
+  <button class="menu-item" type="button" onclick="App.archiveList(); App.closeMenu()">Arsip</button>
+  <button class="menu-item" type="button" onclick="App.backupMenu(); App.closeMenu()">Backup / Import</button>
+</div>
+<main id="app" class="container"></main>
+<div id="toast" class="toast" role="status"></div>
+<div id="modal" class="modal hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.playwright-cli/
+.sites-runtime/
+preview.log
+*.log
+*.tar.gz
+*.zip
