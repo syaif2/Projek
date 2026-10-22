@@ -45,6 +45,7 @@ Teknologi yang digunakan:
 ```text
 saitheme/
 │
+├── Photo/screenshot beberapa foto
 ├── index.php
 ├── style.css
 ├── functions.php
